@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Une application web de calculatrice simple développée avec [React](https://reactjs.org/) et bootstrappée avec [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Fonctionnalités
 
-In the project directory, you can run:
+- Addition, soustraction, multiplication et division
+- Réinitialisation de l'entrée ou du résultat
+- Interface utilisateur simple et responsive
 
-### `npm start`
+## Prérequis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Node.js](https://nodejs.org/) (version 14 ou supérieure recommandée)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Clonez le dépôt puis installez les dépendances :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+git clone <url-du-repo>
+cd calculator-app
+npm install
+```
 
-### `npm run build`
+## Lancement en développement
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm start
+```
+L'application sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Construction pour la production
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run build
+```
+Le build sera généré dans le dossier `build/`.
 
-### `npm run eject`
+## Exécution des tests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+npm test
+```
+Les tests sont configurés avec [Jest](https://jestjs.io/) et [Testing Library](https://testing-library.com/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Structure du projet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+calculator-app/
+├── public/
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   └── assets/
+└── package.json
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Utilisation rapide
 
-## Learn More
+1. Saisissez un nombre dans le champ prévu.
+2. Cliquez sur l'opération souhaitée (addition, soustraction, multiplication, division).
+3. Utilisez les boutons "reset Input" ou "reset result" pour réinitialiser respectivement l'entrée ou le résultat.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Auteurs
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ABDOULAYE TRAORE — Développeur principal
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Pour toute question ou suggestion, veuillez ouvrir une issue ou contacter abdoulaye.traore@apna-asso.org
 
-### Analyzing the Bundle Size
+## Améliorations possibles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Ajout de tests unitaires pour chaque opération
+- Gestion des erreurs (ex : division par zéro)
+- Amélioration de l’accessibilité et du design
